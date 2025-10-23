@@ -18,6 +18,8 @@ public class Holidays_App {
         System.out.println("iam adel");
         System.out.println("ABDO");
         System.out.println("عبدو حمار");
+        System.out.println("يالا يا ابن الحلال");
+        System.out.println("عدل انت بقى");
     }
     
 }
