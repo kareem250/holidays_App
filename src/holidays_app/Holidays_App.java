@@ -22,6 +22,7 @@ public class Holidays_App {
         System.out.println("عدل انت بقى");
         System.out.println("elzoz ya am .. habiby yaa am");
         System.out.println("هو هو الزوز ياعم");
+        System.out.println("العادل يعم");
     }
     
 }
