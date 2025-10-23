@@ -17,6 +17,7 @@ public class Holidays_App {
         System.out.println("Hi");
         System.out.println("iam adel");
         System.out.println("ABDO");
+        System.out.println("عبدو حمار");
     }
     
 }
