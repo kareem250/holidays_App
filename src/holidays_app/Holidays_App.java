@@ -4,6 +4,11 @@
  */
 package holidays_app;
 
+import com.formdev.flatlaf.FlatLightLaf;
+import holidays_app.screens.sign_screen;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 /**
  *
  * @author wika
@@ -14,6 +19,13 @@ public class Holidays_App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+try {
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (UnsupportedLookAndFeelException ex) {
+            System.out.println(ex.getMessage());
+        }
+ sign_screen s=new sign_screen();
+ s.setVisible(true);
 
         System.out.println("Kareem Ahmed Salama");
         System.out.println("Adel Reda Adel");
