@@ -14,8 +14,14 @@ public class Holidays_App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hi");
-        System.out.println("iam adel");
+
+        System.out.println("Kareem Ahmed Salama");
+        System.out.println("Adel Reda Adel");
+        System.out.println("Abd El Rahman");
+        System.out.println("Ziad Mohamed Khalaf");
+        System.out.println("ناقص خمسة كمان");
+        System.out.println("هيبقو سته ");
+        System.out.println("احلي مسا عليكو يولاد المت***");
     }
     
 }
