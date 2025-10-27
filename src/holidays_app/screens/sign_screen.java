@@ -89,6 +89,7 @@ public class sign_screen extends javax.swing.JFrame {
         jButton14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton14.setForeground(new java.awt.Color(255, 255, 255));
         jButton14.setText("Register");
+        jButton14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14jButton6ActionPerformed(evt);
