@@ -24,6 +24,9 @@ try {
         } catch (UnsupportedLookAndFeelException ex) {
             System.out.println(ex.getMessage());
         }
+  UIManager.put("Button.arc", 25);                  // زرار مدور
+        UIManager.put("Component.arc", 15);               // لكل العناصر
+        UIManager.put("TextComponent.arc", 10);           // التكسيت فيلد
  sign_screen s=new sign_screen();
  s.setVisible(true);
 
