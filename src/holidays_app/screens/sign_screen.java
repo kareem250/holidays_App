@@ -59,7 +59,6 @@ public class sign_screen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(670, 490));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(26, 42, 70));
@@ -158,6 +157,11 @@ public class sign_screen extends javax.swing.JFrame {
         jToggleButton3.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jToggleButton3.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton3.setText("Log In");
+        jToggleButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -360,6 +364,11 @@ jTabbedPane1.setSelectedIndex(0);
     private void jPasswordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordField2ActionPerformed
+
+    private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
+        new main_screen().setVisible(true);
+        dispose(); 
+    }//GEN-LAST:event_jToggleButton3ActionPerformed
 
     /**
      * @param args the command line arguments
