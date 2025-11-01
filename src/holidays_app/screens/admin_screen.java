@@ -5,7 +5,15 @@
 package holidays_app.screens;
 
 import java.awt.Color;
+import java.awt.Component;
+import javax.swing.DefaultCellEditor;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.border.LineBorder;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumn;
 
 /**
  *
@@ -23,7 +31,9 @@ public class admin_screen extends javax.swing.JFrame {
      */
     public admin_screen() {
         initComponents();
+
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,6 +45,8 @@ public class admin_screen extends javax.swing.JFrame {
     private void initComponents() {
 
         jToggleButton3 = new javax.swing.JToggleButton();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
@@ -275,13 +287,13 @@ public class admin_screen extends javax.swing.JFrame {
         jTable1.setForeground(new java.awt.Color(26, 42, 70));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Name", "Reason", "Requset Day", "Start Day", "End Day"
+                "Name", "Reason", "Requset Day", "Start Day", "End Day", "قبول", "رفض"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -311,9 +323,9 @@ public class admin_screen extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
+                .addGap(66, 66, 66)
                 .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(144, 144, 144)
+                .addGap(160, 160, 160)
                 .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 148, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
@@ -635,16 +647,21 @@ public class admin_screen extends javax.swing.JFrame {
 
         jLabel5.setText("Role");
 
+        buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("HR");
 
+        buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("Employee");
 
         jLabel6.setText("Department");
 
+        buttonGroup2.add(jRadioButton3);
         jRadioButton3.setText("programing");
 
+        buttonGroup2.add(jRadioButton6);
         jRadioButton6.setText("Network");
 
+        buttonGroup2.add(jRadioButton4);
         jRadioButton4.setText("AI");
 
         jButton1.setBackground(new java.awt.Color(0, 51, 51));
@@ -1272,6 +1289,8 @@ jTabbedPane1.setSelectedIndex(5);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
